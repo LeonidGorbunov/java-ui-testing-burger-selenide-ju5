@@ -1,3 +1,5 @@
+[![UI Tests (Selenide) & Allure Report](https://github.com/LeonidGorbunov/java-ui-testing-burger-selenide-ju5/actions/workflows/tests.yml/badge.svg)](https://github.com/LeonidGorbunov/java-ui-testing-burger-selenide-ju5/actions/workflows/tests.yml)
+[![Allure Report](https://img.shields.io/badge/Allure%20Report-Live-brightgreen)](https://leonidgorbunov.github.io/java-ui-testing-burger-selenide-ju5/)
 # UI-автотесты для веб-приложения Stellar Burgers (Selenide + JUnit 5)
 
 Автоматизированный набор кроссбраузерных end-to-end UI-тестов для учебного сервиса космической бургерной **Stellar Burgers**. Проект построен на стеке **Java 11 + JUnit 5 + Selenide + RestAssured + Allure** с акцентом на стабильность прогонов, разделение ответственности и информативность отчётов.
@@ -133,3 +135,9 @@ src/test/java/ru/education_services/qa_stellarburgers/
 
 ### E2E-проверка ленты заказов и вложенных шагов `assertAll` (`Firefox`)
 ![Лента заказов и assertAll](order-feed.png)
+
+### 📊 Живой отчёт Allure и запуск в CI/CD (GitHub Actions)
+
+* **Интерактивный отчёт последнего прогона (Chrome + Firefox):** [Открыть Allure Report на GitHub Pages](https://leonidgorbunov.github.io/java-ui-testing-burger-selenide-ju5/)
+* **Кроссбраузерный прогон в облаке:** в репозиторий интегрирован пайплайн [GitHub Actions](.github/workflows/tests.yml), запускающий тесты в headless-режиме в Chrome и Firefox на Linux с сохранением истории прогонов Allure и публикацией отчёта на GitHub Pages.
+
